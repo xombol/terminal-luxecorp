@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="77a4e7d2-7993-458c-b752-37727cd228c6" name="main">
+        <fileTransfer rootFolder="/var/www/develop/data/www/terminal.luxecorp.ru" accessType="SFTP" host="2.59.42.119" port="22" sshConfigId="bd24855c-cc94-4137-8cb1-04c4b707bdce" sshConfig="fastuser@2.59.42.119:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="64f2dc8d-93f0-4f6f-82f6-7feaf4852f5a" name="m" url="http://2.59.42.119">
+        <fileTransfer host="2.59.42.119" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

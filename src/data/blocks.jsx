@@ -1,0 +1,507 @@
+const BlocksInfo = [
+    {
+        cat: 'start',
+        level: 1,
+        name: "Начало <br/> бизнеса",
+        title: "Начало бизнеса",
+        elements: [{
+            group: 'Регистрация бизнеса',
+            items: [
+                {
+                    name: "Самозанятость (НПД)",
+                    price: 'Бесплатно',
+                    active: true,
+                    wait: false,
+                },
+                {
+                    name: "Регистрация ИП",
+                    price: 'Бесплатно',
+                    active: true,
+                    wait: false,
+                },
+                {
+                    name: "Регистрация ООО",
+                    price: 'Бесплатно',
+                    active: true,
+                    wait: false,
+                },
+                {
+                    name: "Регистрация АО",
+                    price: 'от 10 000 ₽',
+                    active: true,
+                    wait: true,
+                },
+                {
+                    name: "Регистрация ЗАО",
+                    price: 'от 20 000 ₽',
+                    active: true,
+                    wait: true,
+                },
+                {
+                    name: "Регистрация НАО",
+                    price: 'от 25 000 ₽',
+                    active: true,
+                    wait: true,
+                },
+
+            ]
+        },
+            {
+                group: 'Дополнительные услуги',
+                items: [
+                    {
+                        name: "Регистрация товарного знака",
+                        price: 'от 120 000 ₽',
+                        active: true,
+                        wait: true,
+                    },
+
+
+                ]
+            }]
+
+    },
+    {
+        cat: 'bank',
+        level: 1,
+        name: "Банковские <br/>  услуги",
+        title: "Банковские услуги",
+        elements: [
+            {
+                group: 'Расчётный счёт',
+                items: [
+                    {
+                        name: "Расчётный счёт",
+                        price: 'Бесплатно',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Спецсчёт для торгов",
+                        price: 'Бесплатно',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+            {
+                group: 'Кредиты',
+                items: [
+                    {
+                        name: "Кредит для бизнеса",
+                        price: 'от 2% за подбор кредита',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Кредитная карта",
+                        price: 'Бесплатно',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Лизинг",
+                        price: 'Бесплатно',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Банковская гарантия",
+                        price: 'Бесплатно',
+                        active: true,
+                        wait: false,
+                    },
+
+
+                ]
+            },
+            {
+                group: 'Бизнес карты',
+                items: [
+                    {
+                        name: "Дебетовая карта",
+                        price: 'от 2% за подбор кредита',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Кредитная карта",
+                        price: 'Бесплатно',
+                        active: true,
+                        wait: false,
+                    }
+                ]
+            }
+        ]
+
+    },
+    {
+        cat: 'insurance',
+        level: 1,
+        name: "Услуги <br/> страхования",
+        title: "Услуги страхования",
+        elements: [
+            {
+                group: 'Автострахование',
+                items: [
+                    {
+                        name: "Страховой полис ОСАГО",
+                        price: 'Индивидуальный расчёт',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Страховой полис КАСКО",
+                        price: 'Индивидуальный расчёт',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+            {
+                group: 'Страхование бизнеса',
+                items: [
+                    {
+                        name: "Страхование финансов",
+                        price: 'Индивидуальный расчёт',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Страхование имущества",
+                        price: 'Индивидуальный расчёт',
+                        active: true,
+                        wait: true,
+                    },
+                    {
+                        name: "Страхование грузов",
+                        price: 'Индивидуальный расчёт',
+                        active: true,
+                        wait: true,
+                    },
+                    {
+                        name: "Жизнь и здоровье",
+                        price: 'Индивидуальный расчёт',
+                        active: true,
+                        wait: true,
+                    },
+
+
+                ]
+            },
+        ]
+
+    },
+    {
+        cat: 'develop',
+        level: 1,
+        name: "Отдел <br/> разработки",
+        title: "Отдел разработки",
+        elements: [
+            {
+                group: 'Интернет-проекты',
+                items: [
+                    {
+                        name: "Лендинг пейдж",
+                        price: 'от 42 500 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Корпоративный сайт",
+                        price: 'от 87 900 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Новостной блог",
+                        price: 'от 99 400 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Интернет магазин",
+                        price: 'от 113 990 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+            {
+                group: 'Програмное обеспечение',
+                items: [
+                    {
+                        name: "Мобильное приложение",
+                        price: 'от 360 000 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Декстопные приложения",
+                        price: 'от 360 000 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+        ]
+
+    },
+    {
+        cat: 'marketing',
+        level: 1,
+        name: "Digital -<br/> маркетинг",
+        title: "Digital-маркетинг",
+        elements: [
+            {
+                group: 'Интернет-реклама',
+                items: [
+                    {
+                        name: "Контекстная реклама",
+                        price: 'от 10 000 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "SMM-маркетинг",
+                        price: 'от 15 000 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "SEO-продвижение",
+                        price: 'от 18 990 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+            {
+                group: 'Медийная реклама',
+                items: [
+                    {
+                        name: "Наружная реклама и интерьерная реклама",
+                        price: 'от 2 500 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Широкоформантая и интерьерная реклама",
+                        price: 'от 2 500 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Брендирование автотранспорта",
+                        price: 'от 2 500 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+            {
+                group: 'Радио реклама',
+                items: [
+                    {
+                        name: "Радио реклама",
+                        price: 'от 30 000 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+        ]
+
+    },
+    {
+        cat: 'creative',
+        level: 1,
+        name: "Креативный<br/>отдел",
+        title: "Креативный отдел",
+        elements: [
+            {
+                group: 'Дизайн',
+                items: [
+                    {
+                        name: "Разработка дизайна",
+                        price: 'от 1 500 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Наружная реклама",
+                        price: 'от 1 000 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Типография",
+                        price: 'от 1 000 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+        ]
+
+    },
+    {
+        cat: 'provision',
+        level: 1,
+        name: "Обеспечение<br/>бизнеса",
+        title: "Обеспечение бизнеса",
+        elements: [
+            {
+                group: 'Программное обеспечение',
+                items: [
+                    {
+                        cat: 'portal',
+                        level: 2,
+                        name: "Корпоративный <br/> портал",
+                        title: "Корпоративный портал",
+                        price: 'от 1 990 ₽',
+                        active: true,
+                        wait: false,
+                        elements: [{
+                            group: 'Битрикс 24',
+                            items: [
+                                {
+                                    name: "1 тов",
+                                    price: 'от 120 000 ₽',
+                                    active: true,
+                                    wait: false,
+                                },
+                                {
+                                    name: "1 тов",
+                                    price: 'от 120 000 ₽',
+                                    active: true,
+                                    wait: false,
+                                },
+
+                            ]
+                        },
+                        ]
+                    },
+                    {
+                        name: "Продукты 1С",
+                        price: 'от 8 890 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+            {
+                group: 'Офис',
+                items: [
+                    {
+                        name: "Компьютерная техника",
+                        price: 'от 24 990 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Серверное оборудование",
+                        price: 'от 20 000 ₽',
+                        active: true,
+                        wait: false,
+                    }
+                ]
+            },
+            {
+                group: 'Обслуживание',
+                items: [
+                    {
+                        name: "Ремонт компьютеров",
+                        price: 'от 800 ₽',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Обслуживание принтеров",
+                        price: 'от 400 ₽',
+                        active: true,
+                        wait: false,
+                    }
+                ]
+            },
+            {
+                group: 'Канцелярские товары',
+                items: [
+                    {
+                        name: "Блокноты",
+                        price: 'от 580 ₽',
+                        active: true,
+                        wait: false,
+                    }
+                ]
+            },
+        ]
+
+    },
+    {
+        cat: 'educational',
+        level: 1,
+        name: "Образовательные<br/>услуги",
+        title: "Образовательные услуги",
+        elements: [
+            {
+                group: 'Образовательные услуги',
+                items: [
+                    {
+                        name: "Непрерывное медицинское образование (НМО)",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Высотные<br>работы",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Пожарная <br> безопасность ",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Охрана<br>труда",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Промышленная<br>безопасность",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Перевая<br>помощь",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Гражданская оборона и чрезвычайные ситуации",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                    {
+                        name: "Робочие<br>специальности",
+                        price: '',
+                        active: true,
+                        wait: false,
+                    },
+                ]
+            },
+
+        ]
+
+    },
+
+];
+
+export default BlocksInfo;
