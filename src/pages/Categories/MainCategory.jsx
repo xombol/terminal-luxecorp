@@ -3,6 +3,7 @@ import {Link, useParams} from "react-router-dom";
 
 import BlocksInfo from "../../data/blocks";
 import AppIcons from '../../img/app.png';
+import Indicator from "../../img/indicator.svg";
 
 
 export const MainCategory = () => {
@@ -38,11 +39,12 @@ export const MainCategory = () => {
                                 {block.level ?
                                     <Link
                                         to={!block.wait ? '/category/' + params.category + '/' + block.cat : '/category/' + params.category}
-                                        state={{key: index}}>
+                                        state={{key: index, data: block}}>
                                         <div className={`casebox ${block.wait ? 'soon' : null}`}>
                                             {block.wait ?
                                                 <span className="menu-label menu-label-primary">Скоро</span> : null}
                                             <img src={AppIcons} alt={block.name}/>
+                                            <img src={Indicator} className={"icon_dir"} alt={block.name}/>
                                             <h4 dangerouslySetInnerHTML={{__html: block.name}}/>
                                             <p className='price'>{block.price}</p>
                                         </div>
@@ -50,7 +52,7 @@ export const MainCategory = () => {
 
                                     :
                                     <Link to={!block.wait ? '/request' : '/category/' + params.category}
-                                          state={{data: block}}>
+                                          state={{data: block, link : '/category/' + params.category}}>
                                         <div className={`casebox ${block.wait ? 'soon' : null}`}>
                                             {block.wait ?
                                                 <span className="menu-label menu-label-primary">Скоро</span> : null}

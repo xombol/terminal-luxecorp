@@ -15,7 +15,10 @@ function App() {
                 <Route index path="/" element={<HomePage/>}/>
                 <Route path="/category">
                     <Route path=":category" element={<MainCategory/>}/>
-                    <Route path=":category/:subcategory" element={<SubCategory/>}/>
+                    <Route path=":cat1/:cat2" element={<SubCategory/>}/>
+                    <Route path=":cat1/:cat2/:cat3" element={<SubCategory/>}/>
+                    <Route path=":cat1/:cat2/:cat3/:cat4" element={<SubCategory/>}/>
+                    <Route path=":cat1/:cat2/:cat3/:cat4/:cat5" element={<SubCategory/>}/>
                 </Route>
                 <Route path="/request" element={<RequestPage/>}/>
 

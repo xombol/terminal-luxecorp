@@ -363,17 +363,167 @@ const BlocksInfo = [
                         active: true,
                         wait: false,
                         elements: [{
-                            group: 'Битрикс 24',
+                            group: 'Корпоративный портал',
                             items: [
                                 {
-                                    name: "1 тов",
-                                    price: 'от 120 000 ₽',
+                                    cat: 'bitra',
+                                    level: 3,
+                                    name: "Битрикс 24",
+                                    title: "Битрикс 24",
+                                    price: 'от 23 880 ₽',
                                     active: true,
                                     wait: false,
+                                    elements: [{
+                                        group: 'Битрикс 24',
+                                        items: [
+                                            {
+                                                cat: 'onlaco',
+                                                level: 4,
+                                                name: "Облачное решение",
+                                                title: "Облачное решение",
+                                                price: 'от 23 880 ₽',
+                                                active: true,
+                                                wait: false,
+                                                elements: [
+                                                    {
+                                                        group: 'Облачное решение',
+                                                        items: [
+                                                            {
+                                                                name: "Базовый",
+                                                                sub_info: '5 пользователей',
+                                                                price: '23 880 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                            {
+                                                                name: "Стандартный",
+                                                                sub_info: '50 пользователей',
+                                                                price: '67 080 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                            {
+                                                                name: "Корпоративный портал",
+                                                                sub_info: '100 пользователей',
+                                                                price: '134 280 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                        ]
+                                                    },
+                                                    {
+                                                        group: 'Энтерпрайз версия',
+                                                        items: [
+                                                            {
+                                                                name: "Энтерпрайз",
+                                                                sub_info: '1 000 пользователей',
+                                                                price: '326 280 ₽',
+                                                                active: true,
+                                                                wait: true,
+                                                            },
+                                                            {
+                                                                name: "Энтерпрайз",
+                                                                sub_info: '5 000 пользователей',
+                                                                price: '326 280 ₽',
+                                                                active: true,
+                                                                wait: true,
+                                                            },
+                                                            {
+                                                                name: "Энтерпрайз",
+                                                                sub_info: '10 000 пользователей',
+                                                                price: '526 280 ₽',
+                                                                active: true,
+                                                                wait: true,
+                                                            },
+                                                        ]
+                                                    },
+                                                ]
+                                            },
+                                            {
+                                                cat: 'onlacok',
+                                                level: 4,
+                                                name: "Коробочное решение",
+                                                title: "Коробочное решение",
+                                                price: 'от 99 880 ₽',
+                                                active: true,
+                                                wait: false,
+                                                elements: [
+                                                    {
+                                                        group: 'Коробочное решение',
+                                                        items: [
+                                                            {
+                                                                name: "Интернет-магазин + CRM",
+                                                                sub_info: '12 пользователей',
+                                                                price: '99 000 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                            {
+                                                                name: "Корпоративный портал",
+                                                                sub_info: '50 пользователей',
+                                                                price: '139 000 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                            {
+                                                                name: "Корпоративный портал",
+                                                                sub_info: '100 пользователей',
+                                                                price: '199 000 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                            {
+                                                                name: "Корпоративный портал",
+                                                                sub_info: '250 пользователей',
+                                                                price: '299 000 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                            {
+                                                                name: "Корпоративный портал",
+                                                                sub_info: '500 пользователей',
+                                                                price: '499 000 ₽',
+                                                                active: true,
+                                                                wait: false,
+                                                            },
+                                                        ]
+                                                    },
+                                                    {
+                                                        group: 'Энтерпрайз версия',
+                                                        items: [
+                                                            {
+                                                                name: "Энтерпрайз",
+                                                                sub_info: '1 000 пользователей',
+                                                                price: '326 280 ₽',
+                                                                active: true,
+                                                                wait: true,
+                                                            },
+                                                            {
+                                                                name: "Энтерпрайз",
+                                                                sub_info: '5 000 пользователей',
+                                                                price: '326 280 ₽',
+                                                                active: true,
+                                                                wait: true,
+                                                            },
+                                                            {
+                                                                name: "Энтерпрайз",
+                                                                sub_info: '10 000 пользователей',
+                                                                price: '526 280 ₽',
+                                                                active: true,
+                                                                wait: true,
+                                                            },
+                                                        ]
+                                                    },
+                                                ]
+                                            },
+
+                                        ]
+                                    },
+                                    ]
                                 },
                                 {
-                                    name: "1 тов",
-                                    price: 'от 120 000 ₽',
+                                    name: "AMO CRM",
+                                    price: 'от 5 988 ₽',
                                     active: true,
                                     wait: false,
                                 },

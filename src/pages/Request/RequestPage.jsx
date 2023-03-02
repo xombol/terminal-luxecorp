@@ -5,6 +5,7 @@ export const RequestPage = () => {
 
     const location = useLocation()
     const { data } = location.state
+    const { link } = location.state
 
 
     console.log(data)
@@ -16,7 +17,7 @@ export const RequestPage = () => {
                 <div className='col-lg-6'>
 
                     <h2>
-                        <Link to={"/"}>
+                        <Link to={link}>
                             <i className="bi bi-arrow-bar-left"></i>
 
                         <span className={"mx-3"}></span>
@@ -60,6 +61,8 @@ export const RequestPage = () => {
                     </form>
                 </div>
             </div>
+
+
 
         </section>
     )
