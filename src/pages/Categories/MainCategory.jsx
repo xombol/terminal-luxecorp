@@ -52,7 +52,7 @@ export const MainCategory = () => {
 
                                     :
                                     <Link to={!block.wait ? '/request' : '/category/' + params.category}
-                                          state={{data: block, link : '/category/' + params.category}}>
+                                          state={{data: block, link: '/category/' + params.category}}>
                                         <div className={`casebox ${block.wait ? 'soon' : null}`}>
                                             {block.wait ?
                                                 <span className="menu-label menu-label-primary">Скоро</span> : null}

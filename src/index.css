@@ -454,6 +454,33 @@ img.icon_dir {
     top: 5px;
 }
 
+.blue_btn {
+    background: #00aeef!important;
+}
+.keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #356184;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+    color-stop(.5, rgba(255, 255, 255, .25)),
+    color-stop(.5, transparent), to(transparent));
+}
+
 .breadcrumbs i {
     color: black;
     font-size: 30px;
@@ -472,5 +499,41 @@ img.icon_dir {
 
 .soon {
     background-color: cornsilk !important;
+}
+
+.success_form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background: #00aeef;
+    border: 1px solid white;
+    border-radius: 10px;
+    z-index: 500;
+}
+.success_form > img {
+    max-width: 312px;
+    padding-bottom: 9rem;
+}
+.success_form > p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: normal;
+}
+.start h1{
+    color: white;
+    max-width: 80%;
+    text-align: center;
+}
+.left-info {
+    background: white;
+    padding: 20px;
+    border-radius: 13px;
+    height: auto;
 }
  

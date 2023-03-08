@@ -10,6 +10,7 @@ export const SubCategory = () => {
     const params = useParams();
 
     let link = '';
+    let title_block = '';
     let back_link = '';
     const lvl = Object.keys(params).length;
     let info = {};
@@ -46,6 +47,7 @@ export const SubCategory = () => {
         items.push(info)
 
 
+        title_block +=  items_cat1.title + ' > ' + info.title
         link = '/category/' + params.cat1 + '/' + params.cat2 + '/';
         back_link = '/category/' + params.cat1;
 
@@ -55,7 +57,10 @@ export const SubCategory = () => {
         const items_cat1 = BlocksInfo.find(item => item.cat === params.cat1);
 
         info = filter_data(items_cat1.elements, params.cat2);
+        title_block +=  items_cat1.title + ' > ' + info.title
+
         info = filter_data(info.elements, params.cat3);
+        title_block +=   ' > ' + info.title
 
         items.push(info);
 
@@ -68,8 +73,12 @@ export const SubCategory = () => {
         const items_cat1 = BlocksInfo.find(item => item.cat === params.cat1);
 
         info = filter_data(items_cat1.elements, params.cat2);
+        title_block +=  items_cat1.title + ' > ' + info.title
+
         info = filter_data(info.elements, params.cat3);
+        title_block +=   ' > ' + info.title
         info = filter_data(info.elements, params.cat4);
+        title_block +=   ' > ' + info.title
 
         items.push(info);
 
@@ -83,9 +92,16 @@ export const SubCategory = () => {
         const items_cat1 = BlocksInfo.find(item => item.cat === params.cat1);
 
         info = filter_data(items_cat1.elements, params.cat2);
+        title_block +=  items_cat1.title + ' > ' + info.title
+
         info = filter_data(info.elements, params.cat3);
+        title_block +=   ' > ' + info.title
+
         info = filter_data(info.elements, params.cat4);
+        title_block +=   ' > ' + info.title
+
         info = filter_data(info.elements, params.cat5);
+        title_block +=   ' > ' + info.title
 
         items.push(info);
 
@@ -122,8 +138,6 @@ export const SubCategory = () => {
             </section>
         )
     }
-
-    console.log(items)
 
     const blocks = items[0].elements.map((group, index) =>
         <div key={index}>
@@ -182,7 +196,7 @@ export const SubCategory = () => {
                     <i className="bi bi-arrow-bar-left"></i>
                 </Link>
                 <span className={"mx-3"}></span>
-                {/*{category_items.title}*/}
+                {title_block}
             </h2>
             {blocks}
         </section>
